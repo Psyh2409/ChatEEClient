@@ -32,7 +32,6 @@ public class GetThread implements Runnable {
 
                     JsonMessages list = gson.fromJson(strBuf, JsonMessages.class);
                     if (list != null) {
-                        System.out.println("For everyone:");
                         for (Message m : list.getList()) {
                             System.out.println(m);
                             n++;
